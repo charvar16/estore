@@ -6,7 +6,7 @@
   .container{
     display:grid;
     grid-template-columns:minmax(0, 20%) minmax(438px, 1015px) minmax(0, 20%);
-    grid-template-rows:190px 60px 275px 1fr;
+    grid-template-rows:190px 60px 1fr 70px;
     grid-template-areas: 
       '.    header .' 
       'left nav    right'
@@ -45,6 +45,7 @@
     height:34px;
     margin-left:19px;
   }
+
   .nav{
       grid-area:nav;
       font-size:12px;
@@ -75,24 +76,36 @@
   #canvasx{
     grid-area:canvasx;
     background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Combo area */
+  .combo-group{
+    height: 275px;
+    background-color:mediumturquoise;
+    z-index: 1;
   }
   .combo-group-header{
     display: flex;
     justify-content: space-between;
   }
-  #combo-unit{
-  }
-  #combo-unit p{
-    font-size: 12px;
-    text-decoration: none;
-  }
   .combo-group-body{
     display: flex;
     justify-content: space-around;
   }
+
+  #combo-unit{
+
+  }
+    #combo-unit p{
+      font-size: 12px;
+      text-decoration: none;
+    }
   .combo-img{
     width: 150px;
   }
+  
   @media only screen and (max-width: 830px) {
     .search-cart-wrapper{
       flex-direction: column;

@@ -7,6 +7,8 @@ export default function Canvas() {
       <div className="wrapper">
         <div className="combos-canvas">
             <ComboGroup />
+            <ComboGroup />
+            <ComboGroup />
         </div>
       </div>
     );
