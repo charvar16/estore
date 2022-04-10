@@ -1,6 +1,6 @@
 import Navbar from './navbar'
 import Footer from './footer'
-
+import Canvas from './Canvas'
 export default function Header() {
     return (
       <>
@@ -17,7 +17,9 @@ export default function Header() {
           </div>
         </div>
         <Navbar />
-        <div className="canvasx"></div>
+        <div id="canvasx">
+          <Canvas />
+        </div>
         <Footer />
       </div>
       

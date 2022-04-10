@@ -11,7 +11,12 @@ export default function ComboGroup() {
                     <Link to="collections/bundles-familiares">Más bundles familiares</Link>
                 </p>
             </div>
-            <Combo />
+            <div className="combo-group-body">
+              <Combo />
+              <Combo />
+              <Combo />
+              <Combo />
+            </div>
         </div>
       </div>
     );
