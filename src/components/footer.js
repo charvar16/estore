@@ -12,13 +12,3 @@ export default function Footer() {
         </div>
     );
   }
-  /*
-      (boletin email)
-    ========================
-      (twitter, facebook, instagram links)
-    ========================
-    © 2022 BURGER KING VENEZUELA
-    https://es.shopify.com
-
-    (tarjetas credito images)
-  */
