@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import Home from "./components/home"
+import Collections from "./routes/collections"
+import Collectionsid from "./routes/collectionsid"
+// import Combo from "./routes/combo"
+import Notfound from "./routes/notfound"
+import Search from "./routes/search"
+import Cart from "./routes/cart"
+import Header from './components/header'
+import Footer from './components/footer'
+
+import './styles/styles.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <nav>
+        <Header />
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="collections" element={<Collections />} />
+        <Route path="collections/:id" element={<Collectionsid />}/>
+        {/* <Route path="combo/:id" element={<Combo />}/> */}
+        <Route path="search" element={<Search />}/>
+        <Route path="cart" element={<Cart />}/>
+        <Route path="*" element={<Notfound />}/>
+      </Routes>
+    </Router>
   );
 }
 
