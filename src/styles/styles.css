@@ -114,7 +114,8 @@ a, a:visited{
       .combo-group-body{
         display: flex;
         justify-content: space-around;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        max-height: fit-content;
       }
 
   .combo-unit{
@@ -153,9 +154,6 @@ a, a:visited{
       justify-content:center;
       align-items:flex-start;
     }
-    .combo-unit{
-      
-    }
   }
   @media only screen and (max-width: 754px) {
     .header{
@@ -184,5 +182,9 @@ a, a:visited{
         top: 0;
         height: 100%;
         box-sizing: border-box;
+    }
+
+    .combo-unit{
+      max-width: 50%;
     }
   }
