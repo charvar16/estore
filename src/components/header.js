@@ -1,6 +1,6 @@
 import Navbar from './navbar'
 import Footer from './footer'
-import Canvas from './Canvas'
+import Canvas from './canvas'
 export default function Header() {
     return (
       <>

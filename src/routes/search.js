@@ -1,4 +1,4 @@
-import ComboGroup from '/home/mrrobot/Desktop/clone/src/components/comboGroup'
+import ComboGroup from '../components/combogroup'
 
 export default function Search() {
     return (
