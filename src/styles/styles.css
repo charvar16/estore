@@ -88,10 +88,6 @@ a, a:visited{
     flex-direction: column;
     margin-top: 20px;
   }
-  #footer{
-    grid-area:footer;
-    background-color:gray;
-  }
 
 /* Combo area */
   .combo-group{
@@ -136,7 +132,30 @@ a, a:visited{
   .combo-price{
     font-size: 19px;
   }
-  
+  .combo-add{
+    width: 90%;
+    color: white;
+    background-color: orange;
+    border-radius: 0px;
+    padding: 8px 0;
+  }
+/* Footer   */
+#footer{
+  grid-area:footer;
+  background-color:#464444;
+}
+#footer-container{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;    
+}
+    #footer-container p{
+      z-index: 2;
+      color:white;
+      font-size: 13px;
+      display: inline-block;
+    }
   @media only screen and (max-width: 830px) {
     .search-cart-wrapper{
       flex-direction: column;
