@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 export default function Navbar() {
     return (
         <div className="nav">
-            <div className="wrapper">
+            <div className="nav-links">
                 <Link to="collections">NUESTRO MENU</Link>
             </div>
         </div>

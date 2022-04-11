@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom'
 
 export default function Combo() {
     return (
-        <span id="combo-unit">
+        <span className="combo-unit">
             <Link to="collections/bundles-familiares">
                 <img className="combo-img" src="https://cdn.shopify.com/s/files/1/0247/8869/7150/products/BUNDLEDELREY400x400_360x.png?v=1631287322" alt="error"/>
-                <p>BUNDLE DEL REY</p>
-                <span>$24.50</span>                
+                <p className="combo-name">BUNDLE DEL REY</p>
+                <span className="combo-price">$24.50</span>                
             </Link>
         </span>
     );

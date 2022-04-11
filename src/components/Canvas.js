@@ -9,6 +9,8 @@ export default function Canvas() {
             <ComboGroup />
             <ComboGroup />
             <ComboGroup />
+            <ComboGroup />
+            <ComboGroup />
         </div>
       </div>
     );

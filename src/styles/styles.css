@@ -2,7 +2,10 @@
     margin:0;
     padding:0;
     list-style: none;
-  }
+ }
+a, a:visited{
+  text-decoration: none;
+}
   .container{
     display:grid;
     grid-template-columns:minmax(0, 20%) minmax(438px, 1015px) minmax(0, 20%);
@@ -14,7 +17,6 @@
       'footer footer footer';
     height:100vh;
     width:100%;
-    background-color:magenta;
   }
   .header{
     grid-area:header;
@@ -55,10 +57,14 @@
       padding-left:5px;
       z-index:1;
   }
-      .nav-bar{
+      .nav-links{
         line-height: 60px;
       }
-      .nav-bar > li{
+      .nav-links a{
+        font-size: 18px;
+        color: white;
+      }
+      .nav-links > li{
         display: inline;
       }
 
@@ -87,24 +93,37 @@
     background-color:mediumturquoise;
     z-index: 1;
   }
-  .combo-group-header{
-    display: flex;
-    justify-content: space-between;
-  }
-  .combo-group-body{
-    display: flex;
-    justify-content: space-around;
-  }
+      .combo-group-header{
+        display: flex;
+        justify-content: space-between;
+      }
+          .combo-group-title{
+            font-size: 24px;
+          }
+          .combo-group-link{
+            font-size: 14px;
+          }
+      .combo-group-body{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+      }
 
-  #combo-unit{
-
+  .combo-unit{
+    max-width: 150px;
   }
-    #combo-unit p{
+    .combo-unit p{
       font-size: 12px;
       text-decoration: none;
     }
   .combo-img{
-    width: 150px;
+    max-width: 150px;
+  }
+  .combo-name{
+    font-size: 14px;
+  }
+  .combo-price{
+    font-size: 19px;
   }
   
   @media only screen and (max-width: 830px) {
