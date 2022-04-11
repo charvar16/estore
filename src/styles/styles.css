@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     list-style: none;
+    box-sizing: border-box;
  }
 a, a:visited{
   text-decoration: none;
@@ -18,7 +19,9 @@ a, a:visited{
     height:100vh;
     width:100%;
   }
-  .header{
+
+/* Header */
+.header{
     grid-area:header;
     display:flex;
     position:relative;
@@ -48,6 +51,7 @@ a, a:visited{
         margin-left:19px;
       }
 
+/* Navigation bar */
   .nav{
       grid-area:nav;
       font-size:12px;
@@ -68,10 +72,7 @@ a, a:visited{
         display: inline;
       }
 
-  #footer{
-    grid-area:footer;
-    background-color:gray;
-  }
+
   .border-left{
     grid-area:left;
     background-color:orange;
@@ -85,17 +86,24 @@ a, a:visited{
     background-color: chartreuse;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
+  }
+  #footer{
+    grid-area:footer;
+    background-color:gray;
   }
 
 /* Combo area */
   .combo-group{
-    height: 275px;
+    height: fit-content;
     background-color:mediumturquoise;
-    z-index: 1;
+    margin-bottom: 10px;
   }
       .combo-group-header{
         display: flex;
         justify-content: space-between;
+        align-items:center;
+        height:90px;
       }
           .combo-group-title{
             font-size: 24px;
@@ -110,14 +118,16 @@ a, a:visited{
       }
 
   .combo-unit{
-    max-width: 150px;
+    max-width: 25%;
+    max-height: fit-content;
   }
     .combo-unit p{
       font-size: 12px;
       text-decoration: none;
     }
   .combo-img{
-    max-width: 150px;
+    max-width: 100%;
+  height: auto;
   }
   .combo-name{
     font-size: 14px;
@@ -138,6 +148,14 @@ a, a:visited{
     .cart{
       margin-left:0;
     }
+    .combo-group-header{
+      flex-direction:column;
+      justify-content:center;
+      align-items:flex-start;
+    }
+    .combo-unit{
+      
+    }
   }
   @media only screen and (max-width: 754px) {
     .header{
@@ -153,7 +171,7 @@ a, a:visited{
   @media only screen and (max-width: 470px) {
     .container{
       grid-template-columns:1fr;
-      grid-template-rows:60px 190px 275px 1fr;
+      grid-template-rows:60px 190px 1fr 70px;
       grid-template-areas:
       'nav'
       'header' 
