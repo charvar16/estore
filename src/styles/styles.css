@@ -9,7 +9,7 @@ text-decoration: none;
 }
 .container{
   display:grid;
-  grid-template-columns:minmax(0, 20%) minmax(438px, 1015px) minmax(0, 20%);
+  grid-template-columns:minmax(0, 17.5%) minmax(438px, 1015px) minmax(0, 17.5%);
   grid-template-rows:190px 60px 1fr 70px;
   grid-template-areas: 
     '.    header .' 
@@ -141,6 +141,31 @@ height: auto;
   border-radius: 0px;
   padding: 8px 0;
 }
+/* Search */
+.search{
+  margin-bottom:50px;
+}
+.search-terms{
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80px;
+}
+    .search-terms{
+      margin-bottom: 10px;
+    }
+    .search-terms input{
+      width: 70%;
+    }
+.search-results{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+    .search-results span{
+      max-width: 25%;
+    }
 /* Footer   */
 #footer{
 grid-area:footer;
@@ -176,6 +201,59 @@ justify-content: center;
     align-items:flex-start;
   }
 }
+
+/* Collections */
+.prod-container{
+  height:744px;
+  width:100%;
+  border:1px solid;
+  display:flex;
+  padding-top:20px;
+  align-items:center;
+}
+.right{
+  margin-left:50px;
+}
+.prod-img{
+  width:347px;
+  height:347px;
+  flex-basis:71%;
+}
+.title{
+  font-family:"Antique Olive", sans-serif;
+  font-size:18px;
+}
+.price{
+  font-family:"Antique Olive", sans-serif;
+  font-size:24px;
+  margin-bottom:20px;
+}
+.prod-labels{
+  font-family:"Antique Olive", sans-serif;
+  font-size:24px;
+  color:rgb(133, 133, 133);
+  margin-bottom:8px;
+}
+.prod-select{
+  margin-bottom:12px;
+}
+.prod-bttn{
+  display:block;
+}
+.comprar{margin-bottom:50px;}
+.description{
+  font-family:"Antique Olive", sans-serif;
+  font-size:14px;
+  width:60%;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 753px){
+  .prod-container{
+    flex-direction:column;
+  }
+}
 @media only screen and (max-width: 754px) {
   .header{
     justify-content: center;
@@ -205,7 +283,7 @@ justify-content: center;
       box-sizing: border-box;
   }
 
-  .combo-unit{
+  .combo-unit, .search-results span{
     max-width: 50%;
   }
 }
