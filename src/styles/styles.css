@@ -210,6 +210,7 @@ justify-content: center;
   display:flex;
   padding-top:20px;
   align-items:center;
+  height: fit-content;
 }
 .right{
   margin-left:50px;
@@ -285,5 +286,9 @@ justify-content: center;
 
   .combo-unit, .search-results span{
     max-width: 50%;
+  }
+
+  .prod-container{
+    flex-direction: column;
   }
 }
