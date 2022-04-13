@@ -13,6 +13,9 @@ export default function Navbar() {
             </div>
 
             <div className="cart-small">
+                <Link to="search">
+                    <i className="fa fa-search search-small"></i>
+                </Link>
                 <Link to="cart">
                     <i className="fa fa-shopping-cart cart-wo-legend"></i>
                 </Link>
