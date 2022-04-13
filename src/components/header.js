@@ -1,3 +1,4 @@
+import { Link} from 'react-router-dom'
 import Navbar from './navbar'
 import Footer from './footer'
 import Canvas from './canvas'
@@ -9,8 +10,13 @@ export default function Header() {
               alt="Error" width="50" height="60" /> 
         <div className="search-cart-wrapper">
           <input className="search-bar" type="search" value="Buscar en todos los productos..."/>
-          <button className="cart" type="submit">CARRITO</button>
+          
+          <button><i className="fa fa-shopping-cart cart-legend"> Carrito</i></button>
+          
+          
+          {/* <button className="cart" type="submit">CARRITO</button> */}
         </div>
+        
       </>
     );
   }

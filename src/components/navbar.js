@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 export default function Navbar() {
     return (
@@ -10,6 +10,12 @@ export default function Navbar() {
                     <Link className="dropdown-links" to="collections/combos-king-jr">COMBOS KING JR</Link>
                     <Link className="dropdown-links" to="collections/acompanantes"> ACOMPAÑANTES</Link>
                 </div>
+            </div>
+
+            <div className="cart-small">
+                <Link to="cart">
+                    <i className="fa fa-shopping-cart cart-wo-legend"></i>
+                </Link>
             </div>
         </div>
     );
