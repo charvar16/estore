@@ -4,7 +4,12 @@ export default function Navbar() {
     return (
         <div className="nav">
             <div className="nav-links">
-                <Link to="collections">NUESTRO MENU</Link>
+                <Link className="menu" to="collections">NUESTRO MENU</Link>
+                <div className="nav-dropdown">
+                    <Link className="dropdown-links" to="collections/a-la-parrilla">COMBOS A LA PARRILLA</Link>
+                    <Link className="dropdown-links" to="collections/combos-king-jr">COMBOS KING JR</Link>
+                    <Link className="dropdown-links" to="collections/acompanantes"> ACOMPAÑANTES</Link>
+                </div>
             </div>
         </div>
     );
@@ -13,7 +18,7 @@ export default function Navbar() {
   /*
   
   <div className="nav">
-              <Link to="collections/a-la-parrilla">COMBOS A LA PARRILLA</Link>
+              
               <Link to="collections/frontpage">COMBOS SANDWICH DE POLLO</Link>
               <Link to="collections/combos-king-jr">COMBOS KING JR</Link>
               <Link to="collections/acompanantes"> ACOMPAÑANTES</Link>

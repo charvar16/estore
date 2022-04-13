@@ -63,14 +63,24 @@ text-decoration: none;
 }
     .nav-links{
       line-height: 60px;
+      position: relative;
+      width: 30%;
     }
     .nav-links a{
       font-size: 18px;
-      color: white;
     }
-    .nav-links > li{
-      display: inline;
+    .dropdown-links{
+      display: none;
+      background-color: white;
+      color: orange;
     }
+    .menu{
+      color:white;
+    }
+    .nav-links:hover .dropdown-links{
+      display: block;
+    }
+
 
 
 .border-left{
