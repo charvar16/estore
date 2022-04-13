@@ -41,18 +41,20 @@ text-decoration: none;
     display:flex;
     justify-content: flex-end;
 }
+    .search-form{
+      display: flex;
+      margin-right: 15px;
+    }
     .search-bar{
       resize:horizontal;
       overflow:auto;
-      width: minmax(200px,300px);
+      width: minmax(200px,250px);
       background-color: #f3f3f3;
     }
-    .cart{
-      display: none;
-      width:135px;
-      height:34px;
-      margin-left:19px;
+    .search-button{
+      height: 34px;
     }
+    
     .cart-legend{
       
     }
@@ -226,9 +228,6 @@ justify-content: center;
   }
   .search-bar{
     padding:4px 0; /*Stops the vertical border from collapsing*/
-  }
-  .cart{
-    margin-left:0;
   }
   .combo-group-header{
     flex-direction:column;

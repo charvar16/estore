@@ -12,12 +12,13 @@ export default function Header() {
         </Link>
          
         <div className="search-cart-wrapper">
-          <input className="search-bar" type="search" value="Buscar en todos los productos..."/>
+          <form className="search-form">
+            <input className="search-bar" type="search" value="Buscar en todos los productos..."/>
+            <button className="search-button"></button>
+          </form>
           
           <button><i className="fa fa-shopping-cart cart-legend"> Carrito</i></button>
           
-          
-          {/* <button className="cart" type="submit">CARRITO</button> */}
         </div>
         
       </>
