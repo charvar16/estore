@@ -1,5 +1,6 @@
 import { Link} from 'react-router-dom'
 import React, { useState } from 'react';
+
 export default function Header() {
 
   const [searchTerm, setSearchTerm] = useState('');
@@ -27,7 +28,7 @@ export default function Header() {
             <input className="search-bar" type="search" value={searchTerm} placeholder="Buscar en todos los productos..." onChange={handleChange}/>
             <Link className="searcho" to="search">
               <input className="search-button" type="submit" value="Submit">
-                  {/* <i className="fa fa-search search-button-simbol"></i>*/}
+                  {/* <i className="fa fa-search search-button-simbol"></i> */}
               </input>
             </Link>
             
