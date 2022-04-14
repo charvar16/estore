@@ -1,8 +1,19 @@
 import { Link} from 'react-router-dom'
-import Navbar from './navbar'
-import Footer from './footer'
-import Canvas from './canvas'
+import React, { useState } from 'react';
 export default function Header() {
+
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSubmit=(e)=> {
+    alert('clicked');
+    e.preventDefault();
+  }
+  const handleChange=(e)=> {
+    setSearchTerm(e.target.value);
+    console.log(searchTerm);
+  }
+
+
     return (
       <>
         <Link className="logo-link" to="/">
@@ -12,15 +23,17 @@ export default function Header() {
         </Link>
          
         <div className="search-cart-wrapper">
-          <form className="search-form">
-            <input className="search-bar" type="search" value="Buscar en todos los productos..."/>
-            <button className="search-button"></button>
+          <form className="search-form" onSubmit={handleSubmit}>
+            <input className="search-bar" type="search" value={searchTerm} placeholder="Buscar en todos los productos..." onChange={handleChange}/>
+            <Link className="searcho" to="search">
+              <input className="search-button" type="submit" value="Submit">
+                  {/* <i className="fa fa-search search-button-simbol"></i>*/}
+              </input>
+            </Link>
+            
           </form>
-          
-          <button><i className="fa fa-shopping-cart cart-legend"> Carrito</i></button>
-          
+          <button><i className="fa fa-shopping-cart cart-legend"> Carrito</i></button>          
         </div>
-        
       </>
     );
   }
